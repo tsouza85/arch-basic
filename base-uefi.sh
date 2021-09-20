@@ -23,13 +23,13 @@ pacman -S grub efibootmgr networkmanager network-manager-applet dialog wpa_suppl
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 
-systemctl enable NetworkManage
+systemctl enable NetworkManager
 systemctl enable bluetooth
 systemctl enable cups.service
 systemctl enable sshd
 systemctl enable avahi-daemon
-systemctl enable tlp # You can comment this command out if you didn't install tlp, see above
-systemctl enable reflector.timer
+#systemctl enable tlp # You can comment this command out if you didn't install tlp, see above
+#systemctl enable reflector.timer
 systemctl enable fstrim.timer
 systemctl enable libvirtd
 systemctl enable firewalld
