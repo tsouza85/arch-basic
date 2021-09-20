@@ -3,7 +3,7 @@
 sudo timedatectl set-ntp true
 sudo hwclock --systohc
 
-sudo reflector -c Brazil -a 6 --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector -c Brazil -a 4 --sort rate --save /etc/pacman.d/mirrorlist
 
 git clone https://aur.archlinux.org/pikaur.git
 cd pikaur/
